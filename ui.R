@@ -27,10 +27,11 @@ shinyUI(fluidPage(
     
     mainPanel(
       tabsetPanel(
-        tabPanel("All features intersect", dataTableOutput('featuresIntersect')),
-        tabPanel("Features distribution", plotOutput('boxplots', width='100%')),
-        tabPanel("Density plots", plotOutput('density', width='100%')),
-        tabPanel("Survival curves", plotOutput('survival', width='100%'))
+        tabPanel("Features distribution", plotOutput('boxplots', width='100%', height='600px')),
+        tabPanel("Density plots", plotOutput('density', width='100%', height='600px')),
+        tabPanel("Survival curves", plotOutput('survival', width='100%', height='600px')),
+        tabPanel("All features intersect", dataTableOutput('featuresIntersect'))
+        
       )
 #         tabPanel("Krzywe przeżycia", verbatimTextOutput("opis_wykresu"), plotOutput("wykres", width = 800, height = 600)),
       )
