@@ -1,4 +1,5 @@
 library(gridExtra)
+library(dplyr)
 
 raki <- c("BRCA", "COAD", "GBM", "KIPAN", 'KIRC', "LAML",
           "LUAD", "LUSC", "UCEC")
